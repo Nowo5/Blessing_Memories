@@ -31,6 +31,8 @@ label start:
             jump chapter_1
         "CHAPTER 2.":
             jump chapter_2
+        "CHAPTER 3.":
+            jump chapter_3
 
 label chapter_1:
     "Aku ingin memiliki keluarga perhatian, penyayang serta perduli kepada anaknya"

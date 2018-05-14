@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script/script.rpy", line 20: end of line expected.
-    with Pause(1) with dissolve
-                  ^
+File "game/script/script_3.rpy", line 26: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Tolong kau antar Chinatsu ke UKS."
+                                       ^
 
 Ren'Py Version: Ren'Py 6.99.13.2919

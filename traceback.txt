@@ -1,44 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script/script.rpy", line 15, in script
-    $ Taku = renpy.input("Namaku adalah.....")
-  File "game/script/script.rpy", line 15, in <module>
-    $ Taku = renpy.input("Namaku adalah.....")
-IOError: Couldn't find file 'reverie.mp3'.
+  File "game/script/script_3.rpy", line 29, in script
+    jump rute_4b
+ScriptError: could not find label 'rute_4b'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script/script.rpy", line 15, in script
-    $ Taku = renpy.input("Namaku adalah.....")
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/python.py", line 1764, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/script/script.rpy", line 15, in <module>
-    $ Taku = renpy.input("Namaku adalah.....")
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/exports.py", line 818, in input
-    rv = renpy.ui.interact(mouse='prompt', type="input", roll_forward=roll_forward)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/ui.py", line 287, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 2553, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 2858, in interact_core
-    renpy.audio.audio.interact()
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 1027, in interact
-    periodic()
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 960, in periodic_thread_main
-    periodic_pass()
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 917, in periodic_pass
-    c.periodic()
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 409, in periodic
-    topf = load(self.file_prefix + filename + self.file_suffix)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 69, in load
-    rv = renpy.loader.load(fn)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/loader.py", line 548, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'reverie.mp3'.
+  File "game/script/script_3.rpy", line 29, in script
+    jump rute_4b
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/ast.py", line 1552, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/script.py", line 861, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'rute_4b'.
 
 Linux-4.8.0-53-generic-x86_64-with-debian-stretch-sid
 Ren'Py 6.99.13.2919
