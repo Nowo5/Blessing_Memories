@@ -1,0 +1,47 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script_2.rpy", line 119, in script
+    "Aku dan Kuroyuki tiba di ruang klub terlihat Chinatsu dan Eri sudah datang"
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+IOError: Couldn't find file 'Rain On Lake Erie.mp3'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script_2.rpy", line 119, in script
+    "Aku dan Kuroyuki tiba di ruang klub terlihat Chinatsu dan Eri sudah datang"
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/ast.py", line 590, in execute
+    statement_name("say")
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/ast.py", line 43, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/exports.py", line 1406, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 2123, in do_with
+    clear=clear)
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 2553, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 3104, in interact_core
+    renpy.audio.audio.periodic()
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 960, in periodic_thread_main
+    periodic_pass()
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 917, in periodic_pass
+    c.periodic()
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 409, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/loader.py", line 548, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'Rain On Lake Erie.mp3'.
+
+Linux-4.8.0-53-generic-x86_64-with-debian-stretch-sid
+Ren'Py 6.99.13.2919
+Cengoh Software 1.0
