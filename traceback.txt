@@ -1,35 +1,33 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script_2.rpy", line 119, in script
-    "Aku dan Kuroyuki tiba di ruang klub terlihat Chinatsu dan Eri sudah datang"
-  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
-    _window_show()
-  File "renpy/common/000window.rpy", line 60, in _window_show
-    renpy.with_statement(trans)
-IOError: Couldn't find file 'Rain On Lake Erie.mp3'.
+  File "game/script/script.rpy", line 15, in script
+    $ Taku = renpy.input("Namaku adalah.....")
+  File "game/script/script.rpy", line 15, in <module>
+    $ Taku = renpy.input("Namaku adalah.....")
+IOError: Couldn't find file 'reverie.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script_2.rpy", line 119, in script
-    "Aku dan Kuroyuki tiba di ruang klub terlihat Chinatsu dan Eri sudah datang"
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/ast.py", line 590, in execute
-    statement_name("say")
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/ast.py", line 43, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
-    _window_show()
-  File "renpy/common/000window.rpy", line 60, in _window_show
-    renpy.with_statement(trans)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/exports.py", line 1406, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 2123, in do_with
-    clear=clear)
+  File "game/script/script.rpy", line 15, in script
+    $ Taku = renpy.input("Namaku adalah.....")
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/python.py", line 1764, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script/script.rpy", line 15, in <module>
+    $ Taku = renpy.input("Namaku adalah.....")
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/exports.py", line 818, in input
+    rv = renpy.ui.interact(mouse='prompt', type="input", roll_forward=roll_forward)
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/ui.py", line 287, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 2553, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 3104, in interact_core
-    renpy.audio.audio.periodic()
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 2858, in interact_core
+    renpy.audio.audio.interact()
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 1027, in interact
+    periodic()
   File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 960, in periodic_thread_main
     periodic_pass()
   File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 917, in periodic_pass
@@ -40,7 +38,7 @@ Full traceback:
     rv = renpy.loader.load(fn)
   File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/loader.py", line 548, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'Rain On Lake Erie.mp3'.
+IOError: Couldn't find file 'reverie.mp3'.
 
 Linux-4.8.0-53-generic-x86_64-with-debian-stretch-sid
 Ren'Py 6.99.13.2919

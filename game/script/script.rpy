@@ -9,6 +9,18 @@ define k = Character('Kuroyuuki', color="#EE03AD")
 define tk = Character('[t] dan Kuroyuuki', color='#EE0311')
 define sm = Character ('Seluruh Murid', color='#900C3F')
 
+label splashscreen:
+    scene black
+    with Pause(1)
+
+    show text "Khusus Pecinta Rider..." with dissolve
+    with Pause(2)
+
+    hide text with dissolve
+    with Pause(1)
+
+    return
+
 label start:
     play music "reverie.mp3"
     scene bg pexels-photo-176851
@@ -341,7 +353,7 @@ label chapter_1:
     label ingat:
         show chinatsu senang2
         c "Benar juga ya, disini kan tempat pertama kali Taku menyelamatkanku."
-        play music "coba2.mp3" fadeout 1
+        play music "music/coba2.mp3" fadeout 1
         scene event chinatsu1 with fade
         "Kejadian itu terjadi saat aku masih kelas 6 SD"
         "karena badai salju sekolah diliburkan, padahal aku terlanjur

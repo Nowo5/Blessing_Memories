@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script_2.rpy", line 96: expected ':' not found.
-    label rute_2a
-                 ^
+File "game/script/script.rpy", line 20: end of line expected.
+    with Pause(1) with dissolve
+                  ^
 
 Ren'Py Version: Ren'Py 6.99.13.2919
