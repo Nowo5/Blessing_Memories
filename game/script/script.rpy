@@ -18,11 +18,10 @@ label splashscreen:
 
     hide text with dissolve
     with Pause(1)
-
     return
 
 label start:
-    play music "reverie.mp3"
+    play music "music/reverie.mp3"
     scene bg pexels-photo-176851
     $ Taku = renpy.input("Namaku adalah.....")
     $ Taku = Taku.strip()
@@ -56,7 +55,7 @@ label chapter_1:
     $ Taku = renpy.input("Namaku adalah.....")
     $ Taku = Taku.strip()
 
-    play music "Serenity.mp3"
+    play music "music/Serenity.mp3"
     scene bg kamar_pagi
     "Jam tepat pukul 06.05 di balik selimut aku tertidur lelap dan tiba-tiba ada
     seseorang yang berada di atasku"
@@ -84,7 +83,7 @@ label chapter_1:
     "SD hingga SMA bahkan dia selalu bergabung dengan klub yang sama denganku."
 
     scene bg jalan_menuju_sekolah
-    play music "Mountain Breeze.mp3"
+    play music "music/Mountain Breeze.mp3"
     with fade
     show chinatsu sedih
     c "Selalu saja begini kesiangan, gak pernah deh tepat waktu"
@@ -116,7 +115,7 @@ label chapter_1:
     t "Tentu saja Chi chan."
 
     scene bg aula_sekolah
-    play music "bensound-sweet.mp3"
+    play music "music/bensound-sweet.mp3"
     with fade
     "Sesampainya di sekolah kami bergegas menuju aula, pidato sambutan di buka
     oleh ketua OSIS."
@@ -135,7 +134,7 @@ label chapter_1:
     jam pembinaan wali kelas."
 
     scene bg ruang_kelas
-    play music "bensound-clearday.mp3"
+    play music "music/bensound-clearday.mp3"
     with fade
     show misaki senang
     m   "Selamat pagi anak-anak waktunya jam bimbingan wali kelas. "
@@ -210,7 +209,7 @@ label chapter_1:
     "(kaget)"
 
     scene bg lorong_sekolah
-    play music "Mountain Breeze.mp3"
+    play music "music/Mountain Breeze.mp3"
     show kuroyuki senang
     "Aku dan Kuroyuki pergi menuju ruang kepala sekolah"
     t "Kamu ternyata belum pernah mengikuti klub ya?"
@@ -253,7 +252,7 @@ label chapter_1:
     t "Baiklah kita sudah sampai di ruang kepala sekolah, ayo masuk kedalam."
 
     scene bg ruang_kepala_sekolah
-    play music "bensound-sweet.mp3"
+    play music "music/bensound-sweet.mp3"
     t "Permisi Bu, kami sudah tiba."
     show chifuyu jengkel
     show eri merajuk at left
@@ -326,7 +325,7 @@ label chapter_1:
     kami mohon pamit."
 
     scene bg jalan_pulang
-    play music "Introspection.mp3"
+    play music "music/Introspection.mp3"
     with fade
     show chinatsu senang2
     "Di perjalanan pulang aku dan Chinatsu mengobrol membahas kejadian yang
@@ -385,7 +384,7 @@ label chapter_1:
 
     label Selanjutnya_2:
         scene bg kamar_sore with fade
-        play music "Serenity.mp3"
+        play music "music/Serenity.mp3"
         "Aku dan Chinatsu sudah sampai di rumah masing-masing, sesampainya aku
         segera ganti baju, makan, belajar kemudian istirahat."
         "Hari yang cukup melelahkan mungkin besok akan lebih baik."

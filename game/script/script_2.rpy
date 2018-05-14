@@ -15,7 +15,7 @@ label chapter_2:
     t "ini aku sedang berganti seragam sekolah, tunggulah dibawah"
 
     scene bg jalan_menuju_sekolah
-    play music "Mountain Breeze.mp3"
+    play music "music/Mountain Breeze.mp3"
     show chinatsu bertanya
     t "Ada apa Chi chan, kau memandangiku seperti itu?"
     c "[t], siapa yang kau sukai? Eri atau Kuroyuuki?"
@@ -111,7 +111,7 @@ label chapter_2:
         k "mungkin kapan-kapan aku mau membahas beberapa Light Novel."
 
     scene bg ruang_kepala_sekolah
-    play music "Rain On Lake Erie.mp3"
+    play music "music/Rain On Lake Erie.mp3"
     "Aku dan Kuroyuki tiba di ruang klub terlihat Chinatsu dan Eri sudah datang"
     "Eri tampak sibuk menulis sesuatu yang tampak seperti laporan OSIS dan Chinatsu
     tampak bermain dengan smartphonenya."
@@ -197,7 +197,7 @@ label chapter_2:
     ruang klub."
 
     scene bg urban_dusk with fade
-    play music "Introspection.mp3"
+    play music "music/Introspection.mp3"
     t "Chi chan."
     show chinatsu bertanya2
     c "Ada apa [t]?"
@@ -268,7 +268,7 @@ label chapter_2:
         t "Baiklah, aku ikut."
 
     scene bg park_no_fence_day
-    play music "Gone Fishin'.mp3"
+    play music "music/Gone Fishin'.mp3"
     "Lalu kami berdua duduk berdampingan di bangku Taman."
     t "Sekarang permainan apa yang akan kita mainkan?"
     show chinatsu senang2
@@ -296,7 +296,7 @@ label chapter_2:
     show chinatsu senang
     c "Ehem, jadi bagini ‘Pada suatu har~"
     hide chinatsu senang
-    play music "Doomed Romance.mp3"
+    play music "music/Doomed Romance.mp3"
     t "Are, Kenapa kepalaku terasa berat? Semuanya terasa berputar, pandanganku
     semakin gelap."
     scene bg black with fade
