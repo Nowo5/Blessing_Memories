@@ -63,4 +63,4 @@ label chapter_3:
         t   "Siapa yang mengirim sms padaku?"
         "Dari Kuroyuki, coba kulihat isinya"
         "Chinatsu aku antar pulang, cepatlah kemari. Ada sesuatu yang ingin kusampaikan padamu"
-        "Apa yang terjadi pada Chinatsu, aku harus cepat."
+        "Apa yang terjadi pada Chinatsu, aku harus cepat.b"

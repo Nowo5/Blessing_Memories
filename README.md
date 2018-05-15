@@ -8,7 +8,7 @@ Editor Naskah     : Rizki Prima
 Programmer        : Hernowo Prasojo
 
 Projek ini adalah projek game visual novel non-profit yang digunakan sekedar untuk alasan hiburan semata. Aset-aset dalam game
-ini mungkin mengandung materi-materi yang tidak memiliki lisensi. 
+ini mungkin mengandung materi-materi yang tidak memiliki lisensi berbayar.
 
 Jika ada keluhan maupun tanggapan terhadap projek kami
 Kirim ke e-mail: hernowo.android@gmail.com
