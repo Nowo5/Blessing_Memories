@@ -1,24 +1,15 @@
 
-define t = Character('[Taku]', color="E92900")
-define c = Character('Chinatsu', color="#320C90")
-define ks = Character('Kepala Sekolah', color="#8CEE03")
-define e = Character('Eri', color="#03E9EE")
-define cf = Character('Bu Chifuyu', color="#5603EE")
-define m = Character('Bu Misaki', color="#A003EE")
-define k = Character('Kuroyuuki', color="#EE03AD")
-define tk = Character('[t] dan Kuroyuuki', color='#EE0311')
-define sm = Character ('Seluruh Murid', color='#900C3F')
-
-label splashscreen:
-    scene black
-    with Pause(1)
-
-    show text "Khusus Pecinta Rider..." with dissolve
-    with Pause(2)
-
-    hide text with dissolve
-    with Pause(1)
-    return
+define t    = Character('[Taku]', color="E92900")
+define c    = Character('Chinatsu', color="#320C90")
+define ks   = Character('Kepala Sekolah', color="#8CEE03")
+define e    = Character('Eri', color="#03E9EE")
+define cf   = Character('Bu Chifuyu', color="#5603EE")
+define m    = Character('Bu Misaki', color="#A003EE")
+define k    = Character('Kuroyuuki', color="#EE03AD")
+define tk   = Character('[t] dan Kuroyuuki', color='#EE0311')
+define sm   = Character ('Seluruh Murid', color='#900C3F')
+define ek   = Character('Eri dan Kuroyuki',color='#900C3F')
+define s    = Character('Shiroyuki',color='#90003D')
 
 label start:
     play music "music/reverie.mp3"
