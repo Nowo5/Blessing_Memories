@@ -1,5 +1,5 @@
-label chapter_2:
-    play music "Serenity.mp3"
+label sequance_9:
+    play music "music/Serenity.mp3"
     scene bg kamar_pagi
     "Aku terbangun tepat pukul 06.00"
     "di saat alarm berdering keras dan aku masih bersembunyi di dalam selimut
@@ -14,6 +14,7 @@ label chapter_2:
     t "Iya aku sudah bangun"
     t "ini aku sedang berganti seragam sekolah, tunggulah dibawah"
 
+label sequance_10:
     scene bg jalan_menuju_sekolah
     play music "music/Mountain Breeze.mp3"
     show chinatsu bertanya
@@ -45,8 +46,9 @@ label chapter_2:
     "sesampainya di sekolah seperti biasa aku mengantar Chinatsu ke kelasnya lalu
      aku menuju kelasku, tak lama kemudian bel masuk berbunyi."
 
+label sequance_11:
     scene bg ruang_kelas
-    play music "bensound-sweet.mp3"
+    play music "music/bensound-sweet.mp3"
     "Semua murid kelas 3-A telah duduk rapi di bangku masing-masing menunggu
     guru datang"
     "entah itu Bu Misaki atau Bu Chifuyu, waktu berlalu namun tidak seorangpun
@@ -110,6 +112,7 @@ label chapter_2:
         show kuroyuki senang2
         k "mungkin kapan-kapan aku mau membahas beberapa Light Novel."
 
+label sequance_12:
     scene bg ruang_kepala_sekolah
     play music "music/Rain On Lake Erie.mp3"
     "Aku dan Kuroyuki tiba di ruang klub terlihat Chinatsu dan Eri sudah datang"
@@ -196,6 +199,7 @@ label chapter_2:
     "Benar, tidak ada hal apapun yang kita lakukan setelah Eri pergi meninggalkan
     ruang klub."
 
+label sequance_13:
     scene bg urban_dusk with fade
     play music "music/Introspection.mp3"
     t "Chi chan."
@@ -219,12 +223,12 @@ label chapter_2:
     menu:
         "Sedikit, sebagai mantan ketua klub otaku aku tidak bisa melupakan
         kejadian tahun lalu.":
-            jump rute_3a
+            jump rute_2c
         "Tidak juga, aku memang kesal dengan Eri tapi tidak sampai dendam.
         agipula aku tidak mungkin dendam kepada orang yang baru kukenal selama
         satu tahun.":
-            jump rute_3a
-    label rute_3a:
+            jump rute_2c
+    label rute_2c:
         show chinatsu sedih
         c "Tentu saja karena [t] tidak mengingatnya"
         t "Apa Chi chan? aku tidak bisa mendengar."
@@ -267,6 +271,7 @@ label chapter_2:
         c "Sudahlah, ikut saja."
         t "Baiklah, aku ikut."
 
+label sequance_14:
     scene bg park_no_fence_day
     play music "music/Gone Fishin'.mp3"
     "Lalu kami berdua duduk berdampingan di bangku Taman."
@@ -304,3 +309,4 @@ label chapter_2:
     "*[t] terjatuh*"
     show chinatsu sedih
     c "Maafkan aku [t], maaf."
+    jump sequance_15

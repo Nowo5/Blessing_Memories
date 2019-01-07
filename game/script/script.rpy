@@ -14,18 +14,8 @@ define s    = Character('Shiroyuki',color='#90003D')
 label start:
     play music "music/reverie.mp3"
     scene bg pexels-photo-176851
-    $ Taku = renpy.input("Namaku adalah.....")
-    $ Taku = Taku.strip()
-    "Anda mau ke mana?"
-    menu:
-        "CHAPTER 1":
-            jump chapter_1
-        "CHAPTER 2.":
-            jump chapter_2
-        "CHAPTER 3.":
-            jump chapter_3
 
-label chapter_1:
+label prolog:
     "Aku ingin memiliki keluarga perhatian, penyayang serta perduli kepada anaknya"
     "namun semua itu hanya impian semata"
     "Aku berharap mempunyai sahabat yang dapat berbagi keluh dan kesah"
@@ -48,6 +38,20 @@ label chapter_1:
     $ Taku = renpy.input("Namaku adalah.....")
     $ Taku = Taku.strip()
 
+    "Anda mau ke mana?"
+    menu:
+        "CHAPTER 1":
+            jump sequance_1
+        "CHAPTER 2.":
+            jump sequance_9
+        "CHAPTER 3.":
+            jump sequance_15
+        "CHAPTER 4.":
+            jump sequance_20
+        "CHAPTER 5.":
+            jump sequance_23
+
+label sequance_1:
     play music "music/Serenity.mp3"
     scene bg kamar_pagi
     "Jam tepat pukul 06.05 di balik selimut aku tertidur lelap dan tiba-tiba ada
@@ -75,6 +79,7 @@ label chapter_1:
     "entah kenapa dia selalu mengikuti kemana aku pergi. "
     "SD hingga SMA bahkan dia selalu bergabung dengan klub yang sama denganku."
 
+label sequance_2:
     scene bg jalan_menuju_sekolah
     play music "music/Mountain Breeze.mp3"
     with fade
@@ -107,6 +112,7 @@ label chapter_1:
     c "Soal itu, ettooo, anu.. [t] akan membantuku belajar kan ?"
     t "Tentu saja Chi chan."
 
+label sequance_3:
     scene bg aula_sekolah
     play music "music/bensound-sweet.mp3"
     with fade
@@ -126,6 +132,7 @@ label chapter_1:
     cf  "untuk informasi selengkapnya akan diumumkan dikelas masing-masing saat
     jam pembinaan wali kelas."
 
+label sequance_4:
     scene bg ruang_kelas
     play music "music/bensound-clearday.mp3"
     with fade
@@ -201,6 +208,7 @@ label chapter_1:
     t "Ah, ba-baik"
     "(kaget)"
 
+label sequance_5:
     scene bg lorong_sekolah
     play music "music/Mountain Breeze.mp3"
     show kuroyuki senang
@@ -244,6 +252,7 @@ label chapter_1:
     c "Sama-sama."
     t "Baiklah kita sudah sampai di ruang kepala sekolah, ayo masuk kedalam."
 
+label sequance_6:
     scene bg ruang_kepala_sekolah
     play music "music/bensound-sweet.mp3"
     t "Permisi Bu, kami sudah tiba."
@@ -291,15 +300,15 @@ label chapter_1:
         show chifuyu senyum
         cf "Keputusan bijak, kau memang harus memilih karena tak ada kata
         tidak dalam perintahku"
-        jump Selanjutnya
+        jump selanjutnya_1
     label rute_1b:
         show chifuyu marah
         cf "Dasar manusia tak berakal, berani sekali kau menentang perintahku,
         memangnya kau siapa berhak menolak perintahku yang mutlak"
         t "Ekspresi itu, kenapa mebuat hatiku bergejolak tak karuan"
-        jump Selanjutnya
+        jump selanjutnya_1
 
-    label Selanjutnya:
+label selanjutnya_1:
     show chifuyu jengkel
     show eri marah merajuk at left
     e "Tunggu dulu, aku tidak diberitahu tentang hal ini!"
@@ -317,6 +326,7 @@ label chapter_1:
     t "Ah, bukan apa-apa, mohon kerjasamanya untuk satu tahun ini. Bu Chifuyu
     kami mohon pamit."
 
+label sequance_7:
     scene bg jalan_pulang
     play music "music/Introspection.mp3"
     with fade
@@ -338,11 +348,11 @@ label chapter_1:
     c "Nee Taku, kau masih ingat tempat ini."
     menu:
         "Tentu saja aku ingat":
-            jump ingat
+            jump rute_1c
         "Aku tidak ingat tempat apa ini.":
-            jump tidak_ingat
+            jump rute_1d
 
-    label ingat:
+    label rute_1c:
         show chinatsu senang2
         c "Benar juga ya, disini kan tempat pertama kali Taku menyelamatkanku."
         play music "music/coba2.mp3" fadeout 1
@@ -363,9 +373,9 @@ label chapter_1:
         kecil-kecilan,"
         "walaupun sederhana tetapi Chi chan tampak sangat bahagia, sejak
         saat itu dia selalu mengikutiku."
-        jump Selanjutnya_2
+        jump selanjutnya_2
 
-    label tidak_ingat:
+    label rute_1d:
         show chinatsu sedih
         c "Oh begitu, maaf deh kalau perkataanku tadi aneh"
         t "Aneh, memangnya apa?"
@@ -373,12 +383,12 @@ label chapter_1:
         c "Sudah lupakan saja jika kau tak ingat tak apa"
         show chinatsu sedih
         t "Baiklah jika itu keinginanmu"
-        jump Selanjutnya_2
+        jump sequance_8
 
-    label Selanjutnya_2:
+    label sequance_8:
         scene bg kamar_sore with fade
         play music "music/Serenity.mp3"
         "Aku dan Chinatsu sudah sampai di rumah masing-masing, sesampainya aku
         segera ganti baju, makan, belajar kemudian istirahat."
         "Hari yang cukup melelahkan mungkin besok akan lebih baik."
-        jump chapter_2
+        jump sequance_9

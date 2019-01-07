@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing the color property of anonymous style:
-  File "game/script/script_3.rpy", line 200, in script
-    ek  "Permisi."
-ValueError: invalid literal for int() with base 16: '#F'
+While running game code:
+  File "game/script/script_4.rpy", line 29, in script
+    s   "Dingin sekali sikap Darling padaku, apa kau lupa dengan janjimu?"
+IOError: Couldn't find file 'music/bensound-love.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script/script_3.rpy", line 200, in script
-    ek  "Permisi."
+  File "game/script/script_4.rpy", line 29, in script
+    s   "Dingin sekali sikap Darling padaku, apa kau lupa dengan janjimu?"
   File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/ast.py", line 624, in execute
     renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
   File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/exports.py", line 1173, in say
@@ -24,73 +24,19 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 2553, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 2916, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 1980, in draw_screen
-    renpy.config.screen_height,
-  File "renpy/display/render.pyx", line 430, in renpy.display.render.render_screen (gen/renpy.display.render.c:6938)
-    rv = render(root, width, height, 0, 0)
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/screen.py", line 625, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/layout.py", line 1093, in render
-    st, at)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/layout.py", line 1093, in render
-    st, at)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 158, in renpy.display.render.render (gen/renpy.display.render.c:2480)
-    xmaximum = style.xmaximum
-  File "module/gen/styleclass.pxi", line 405, in renpy.styledata.styleclass.Style.xmaximum.__get__ (gen/renpy.styledata.styleclass.c:11190)
-  File "renpy/style.pyx", line 486, in renpy.style.StyleCore._get (gen/renpy.style.c:7619)
-    build_style(self)
-  File "renpy/style.pyx", line 700, in renpy.style.build_style (gen/renpy.style.c:10894)
-    raise
-  File "renpy/style.pyx", line 697, in renpy.style.build_style (gen/renpy.style.c:10776)
-    pfw.function(s.cache, cache_priorities, priority, v)
-  File "gen/style_functions.pyx", line 744, in style_functions.color_property (gen/renpy.styledata.style_functions.c:7725)
-  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/color.py", line 138, in __new__
-    b = int(c[4]+c[5], 16)
-ValueError: invalid literal for int() with base 16: '#F'
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/display/core.py", line 3104, in interact_core
+    renpy.audio.audio.periodic()
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 960, in periodic_thread_main
+    periodic_pass()
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 917, in periodic_pass
+    c.periodic()
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 409, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/audio/audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "/home/hernowo/Data_Hernowo/Program/Linux/renpy-6.99.13-sdk/renpy/loader.py", line 548, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'music/bensound-love.mp3'.
 
 Linux-4.13.0-41-generic-x86_64-with-debian-stretch-sid
 Ren'Py 6.99.13.2919
